@@ -52,11 +52,47 @@ A \times B \times C &= \{ (a,1,x), (a,2,x), (a,3,x), (b,1,x), (b,2,x), (b,3,x), 
 A \times D &= \emptyset.
 \end{align*}
 
+
 \section{}
 
 Find an example of two nonempty sets $A$ and $B$ for which $A \times B = B \times A$.
 
 Consider any nonempty set $A = B$.
+
+
+\section{}
+
+Prove $A \cup \emptyset = A$.
+
+By definition $A \cup \emptyset = \{ x : x \in A \lor x \in \emptyset \}$. Note that the second condition is always false and hence
+
+$$A \cup \emptyset = \{ x : x \in A \lor x \in \emptyset \} = \{ x : x \in A \} = A.$$
+
+Prove $A \cap \emptyset = \emptyset$.
+
+This is very similar to the previous proof. By definition $A \cap \emptyset = \{ x : x \in A \land x \in \emptyset \}$. Note that the second condition is always false and hence
+
+$$A \cap \emptyset = \{ x : x \in A \land x \in \emptyset \} = \{ \} = \emptyset.$$
+
+
+\section{}
+
+Prove $A \cup B = B \cup A$.
+
+This follows directly from the definition
+
+$$A \cup B = \{x : x \in A \lor x \in B\} = B \cup A.$$
+
+Prove $A \cap B = B \cap A$.
+
+This follows directly from the definition
+
+$$A \cap B = \{x : x \in A \land x \in B\} = B \cap A.$$
+
+
+\section{}
+
+
 
 
 \end{document}
