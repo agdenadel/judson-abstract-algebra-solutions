@@ -172,5 +172,60 @@ $$
 The proof that this set of matrices forms a group is straightforward. Associativity follows from the associativity of matrix multiplication. The identity element is the usual identity matrix. Each matrix in the set is upper triangular and has an inverse (if this is not obvious, then the matrices can be easily put in reduced row echelon form).
 
 
+\section{}
+
+Prove that $\det(AB) = det(A)det(B)$ in $GL_2(\mathbb{R})$ Use this result to show that the binary operation in the group $GL_2(\mathbb{R})$ is closed; that is, if $A$ and $B$ are in $GL_2(\mathbb{R})$, then $AB \in GL_2(\mathbb{R})$.
+
+\vspace{\baselineskip}
+
+We already used this basic property of determinants in problem 9. We will prove it for $2 \times 2$ matrices here. Recall the definition of the determinant for a $2 \times 2$ matrix 
+$$A = 
+  \begin{pmatrix}
+    a & b \\
+    c & d \\
+  \end{pmatrix}
+$$
+  
+is given by $\det(A) = ad - bc$.
+
+\vspace{\baselineskip}
+
+Let $A,B$ be $2 \times 2$ matrices where  
+
+$$A = 
+  \begin{pmatrix}
+    a & b \\
+    c & d \\
+  \end{pmatrix}
+  B = 
+  \begin{pmatrix}
+    a' & b' \\
+    c' & d' \\
+  \end{pmatrix}
+$$
+
+and 
+
+$$AB = 
+  \begin{pmatrix}
+    aa' + bc' & ab' + bd'\\
+    a'c + c'd & b'c + dd' \\
+  \end{pmatrix}.
+$$
+
+Notice that 
+
+\begin{align*}
+\det(AB) &= (aa' + bc')(b'c + dd') - (ab' + bd')(a'c + c'd) \\
+&= aa'b'c + aa'dd' + bc'b'c + bc'dd' - ab'a'c - ab'c'd - bd'a'c - bd'c'd \\
+&= (ad - bc) (a'd' - b'c') \\
+&= \det(A) \det(B)
+\end{align*}
+
+\vspace{\baselineskip}
+
+Let $C,D \in GL_2(\mathbb{R})$. Then $\det(C) \neq 0$ and $\det(D) \neq 0$. By the property proved above $\det{CD} = \det{C}\det{D}$. Since $\det{C} \neq 0$ and $\det{D} \neq 0$ we know that $\det{CD} \neq{0}$ hence $CD \in GL_2(\mathbb{R})$ and $GL_2(\mathbb{R})$ is closed.
+
+
 
 \end{document}
