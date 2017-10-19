@@ -57,6 +57,38 @@ Suppose $3x \equiv 1 \mod 6$. There are no solutions.
 
 \section{}
 
+Let $S = \mathbb{R} \setminus \{ -1 \}$ and define a binary operation on $S$ by $a * b = a + b + ab$. Prove that $(S, *)$ is an abelian group.
+
+\vspace{\baselineskip}
+
+Let $a, b, c \in S$. The identity is 0 since $a * 0 = a + 0 + 0a = a$. The inverse of $a$ is given by 
+
+$$ a^{-1} = \frac{-a}{1+a}$$
+
+since
+
+\begin{align*}
+a * a^{-1} &= a * \frac{-a}{1+a} \\
+&= a + \frac{-a}{1+a} + \frac{-a^2}{1+a} \\
+&= \frac{a + a^2}{1+a} - \frac{a + a^2}{1+a} \\
+&= 0
+\end{align*}
+
+and $a \neq -1$.
+
+Consider
+
+\begin{align*}
+(a * b) * c &= (a + b + ab) * c \\
+&= a + b + ab + c + c (a + b + ab) \\
+&= a + b + c + ab + ac + bc + abc \\
+&= a + (b + c + bc) + (ab + ac + abc) \\
+&= a + (b * c) + a (b * c) \\
+&= a * (b * c).
+\end{align*}
+
+This shows associativity.
+
 \section{}
 
 \section{}
