@@ -64,11 +64,15 @@ Consider any nonempty set $A = B$.
 
 Prove $A \cup \emptyset = A$.
 
+\vspace{\baselineskip}
+
 By definition $A \cup \emptyset = \{ x : x \in A \lor x \in \emptyset \}$. Note that the second condition is always false and hence
 
 $$A \cup \emptyset = \{ x : x \in A \lor x \in \emptyset \} = \{ x : x \in A \} = A.$$
 
 Prove $A \cap \emptyset = \emptyset$.
+
+\vspace{\baselineskip}
 
 This is very similar to the previous proof. By definition $A \cap \emptyset = \{ x : x \in A \land x \in \emptyset \}$. Note that the second condition is always false and hence
 
@@ -79,11 +83,15 @@ $$A \cap \emptyset = \{ x : x \in A \land x \in \emptyset \} = \{ \} = \emptyset
 
 Prove $A \cup B = B \cup A$.
 
+\vspace{\baselineskip}
+
 This follows directly from the definition
 
 $$A \cup B = \{x : x \in A \lor x \in B\} = B \cup A.$$
 
 Prove $A \cap B = B \cap A$.
+
+\vspace{\baselineskip}
 
 This follows directly from the definition
 
@@ -94,7 +102,11 @@ $$A \cap B = \{x : x \in A \land x \in B\} = B \cap A.$$
 
 Prove $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.
 
+\vspace{\baselineskip}
+
 Let $x \in A \cup (B \cap C)$ then $x \in A$ or $x \in B \cap C$. If $x \in A$ then $x \in (A \cup B) \cap (A \cup C)$. If $x \in B \cap C$ then $x \in (A \cup B) \cap (A \cup C)$. Hence $A \cup (B \cap C) \subset (A \cup B) \cap (A \cup C)$. 
+
+\vspace{\baselineskip}
 
 Let $x \in (A \cup B) \cap (A \cup C)$. Then $x \in A \cup B$ and $x \in A \cup C$. If $x \in A$, then clearly $x \in A \cup (B \cap C)$. If $x \not\in A$ then $x \in B$ and $x \in C$ hence $x \in A \cap B$. From these two facts we have  $(A \cup B) \cap (A \cup C) \subset A \cup (B \cap C)$.
 
