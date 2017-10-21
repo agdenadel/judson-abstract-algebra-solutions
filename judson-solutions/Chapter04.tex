@@ -161,7 +161,84 @@ $$(-\sqrt{2} - \sqrt{2} i)^{12} = -4096$$
 $$(-2 + 2i)^{-5} = (1/i)/256$$
 
 
+
+\section*{23}
+
+Let $a,b \in G$. Prove the following statements
+
+The order of $a$ is the same as the order of $a^{-1}$.
+
+For all $g \in G, |a| = |g^{-1} a g|.$
+
+The order of $ab$ is the same as the order of $ba$.
+
+\vspace{\baselineskip}
+
+Let $n$ be the order of $a$. Consider
+
+$$a^n a^{-n} = e$$
+$$e a^{-n} = e$$
+$$(a^{-1})^{n} = e.$$
+
+We will prove the first statement. We must now show that $n$ is the least positive integer such that this is true for $a^{-n}$. Assume that $m \in \mathbb{Z} : 0 < m < n$ and  $(a^{-1})^{m} = e$. Consider
+
+\begin{align*}
+a^m a^{-m} &= e \\
+a^m e &= e \\
+a^m &= e \\
+\end{align*}
+
+which is clearly a contradiction. Hence $|a^{-1}| = n$.
+
+\vspace{\baselineskip}
+
+We will prove the second statement. The proof is similar to that of the previous statement. Let $g \in G$. Consider 
+
+\begin{align*}
+(g^{-1} a g)^n &= g^{-1} a g g^{-1} a ... a g g^{-1} a g \\
+&= g^{-1} a^n g \\
+&= g^{-1} e g \\
+&= g^{-1} g \\
+&= e
+\end{align*} 
+
+We must now show that $n$ is the least positive integer such that this is true for $a^{-n}$. Assume that $m \in \mathbb{Z} : 0 < m < n$ and  $(g^{-1} a g)^{m} = e$. Consider
+
+\begin{align*}
+(g^{-1} a g)^{m} &= e \\
+g^{-1} a^m g &= e \\
+a^m g &= g \\ 
+a^m &= gg^{-1} \\ 
+a^m &= e
+\end{align*}
+
+which is clearly a contradiction.
+
+\vspace{\baselineskip}
+
+We will prove the third statement. The proof is similar to the other two. Let $p$ be the order of $ab$. Consider
+
+\begin{align*}
+(ba)^{p+1} &= b (ab)^p a \\
+&= b e a \\
+&= ba \\
+\end{align*}
+
+hence $(ba)^p = e$. We must now show that $p$ is the least positive integer such that this is true for $ba^{p}$. Assume that $q \in \mathbb{Z} : 0 < q < p$ and  $(ba)^{q} = e$. Consider
+
+\begin{align*}
+(ab)^{q+1} &= a (ba)^q b \\
+&= a e b \\
+&= ab
+\end{align*}
+
+hence $(ab)^q = e$ which is a contradiction. 
+
+
+
+
 \section*{31}
+
 
 Let $G$ be an abelian group. Show that the elements of finite order in $G$ form a subgroup. This subgroup is called the \textit{torsion subgroup} of $G$.
 
