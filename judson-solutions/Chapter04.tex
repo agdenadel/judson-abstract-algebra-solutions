@@ -161,6 +161,92 @@ $$(-\sqrt{2} - \sqrt{2} i)^{12} = -4096$$
 $$(-2 + 2i)^{-5} = (1/i)/256$$
 
 
+\section*{19}
+
+Prove each of the following statements.
+
+$$|z| = |\overline{z}|$$
+$$z \overline{z} = |z|^2$$
+$$z^{-1} = \overline{z} / |z|^2$$
+$$|z+w| \leq |z| + |w|$$
+$$|z-w| \geq ||z| - |w||$$
+$$|zw| = |z||w| $$
+
+These statements are proved in order, but some proofs may rely on statements yet to be proved. Let $z = a + bi$ and $w = c + di$. Consider
+
+\begin{align*}
+|z| &= |a + bi| \\
+&= \sqrt{a^2 + b^2} \\
+&= \sqrt{a^2 + (-b)^2} \\
+&= |a - bi| \\
+&= |\overline{z}|.
+\end{align*}
+
+This proves the first statement. Consider
+
+\begin{align*}
+z \overline{z} &= (a + bi)(a - bi) \\
+&= a^2 + b^2 \\
+&= |z|^2.
+\end{align*}
+
+This proves the second statement. Consider, that by the previous statement,
+
+\begin{align*}
+z \overline{z} / |z|^2 &= |z|^2 / |z|^2 \\
+&= 1.
+\end{align*}
+
+This proves the third statement. To prove the fourth statement first consider that
+
+\begin{align*}
+z \overline{w} + w \overline{z} &= z \overline{w} + \overline{z \overline{w}} \\
+&= 2 \text{Re} (z \overline{w}) \\
+&\leq 2 |z \overline{w}| = |z||\overline{w}| = |z||w|.
+\end{align*}
+
+Using this fact
+
+\begin{align*}
+|z+w|^2 &= (z+w) \overline{(z+w)} \\
+&= (z+w) (\overline{z} + \overline{w}) \\
+&= z \overline{z} + z \overline{w} + w \overline{z} + w \overline{w} \\
+&= |z|^2 + z \overline{w} + w \overline{z} + |w|^2 \\
+&\leq |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2.
+\end{align*}
+
+Since the modulus is a greater than or equal to 0 we can take the square root of both sides. This proves the fourth statement. Assume that $|z| \geq |w|$. Consider
+
+\begin{align*}
+|z| &= |(z-w) - w| \\
+ &\leq |z-w| + |-w| \\
+ & \leq |z-w| + |w|
+\end{align*}
+
+Rearranging yields
+
+$$ |z| - |w| \leq |z-w|$$
+
+and since $|z| > |w|$ 
+
+$$ ||z| - |w|| \leq |z-w|.$$
+
+The case where $|w| \geq |z|$ is identical, but uses the fact that
+
+$$|w - z| = |-(z-w)| = |z-w|.$$
+
+This proves the fifth statement. Consider
+
+\begin{align*}
+|zw|^2 &= (zw)\overline{(zw)} \\
+&= zw \overline{z} \overline{w} \\
+&= |z|^2 |w|^2
+\end{align*}
+
+Since the modulus is a greater than or equal to 0 we can take the square root of both sides. This proves the sixth statement.
+
+
+
 
 \section*{23}
 
