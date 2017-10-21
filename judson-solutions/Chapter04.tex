@@ -361,6 +361,19 @@ Let $G$ be an abelian group. Show that the elements of finite order in $G$ form 
 Denote the torsion subgroup of $G$ by $T$. Note that $e$ has order 1 and hence $e \in T$. Let $t \in T$. Let $n$ be the order of $t$ such that $t^n = e$. Notice that since $tt^{n-1} = e$ it is true that $t^{-1} = t^{n-1}$ and thus $t^{-1} \in T$. Let $y \in T$ with the order of $y$ being $m$. Notice that $(ty)^{mn} = t^{mn}y^{mn} = e$. This shows $ty \in T$. This proves that $T$ is a subgroup of $G$. 
 
 
+\section*{37}
+
+Prove that if $G$ has no proper nontrivial subgroups, then $G$ is a cyclic group.
+
+\vspace{\baselineskip}
+
+Assume $G$ has no proper nontrivial subgroups. Recall Theorem 4.1: Let $G$ be a group and $a$ be any element in $G$. Then the set
+
+$$\langle a \rangle = \{ a^k : k \in \mathbb{Z} \}$$
+
+is a subgroup of $G$. If $G$ only has a single element then it is trivially cyclic. Assume $G$ has more than 1 element. Let $a \in G$ such that $a \neq e$. Note that $\langle a \rangle$ is a subgroup of $G$. Since $G$ has no proper nontrivial subgroups either $\langle a \rangle = \{ e \}$ (which is immediately a contradiction) or $\langle a \rangle = G$. Since the second case must be true it immediately follows that $G$ is cyclic.
+
+
 \section*{38}
 
 Prove that the order of an element in a cyclic group $G$ must divide the order of the group.
