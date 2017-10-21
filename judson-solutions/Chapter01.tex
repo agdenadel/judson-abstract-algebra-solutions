@@ -192,6 +192,33 @@ $f : \mathbb{Z} \rightarrow \mathbb{Z}$ defined by $f(x) = x^2$ is not one-to-on
 
 \section*{19}
 
+Let $f: A \rightarrow B$ and $g: B \rightarrow C$ be invertible mappings; that is, mappings such that $f^{-1}$ and $g^{-1}$ exist. Show that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+
+\vspace{\baselineskip}
+
+Let $c \in C$. Note that there exists $a \in A$ such that 
+
+$$(g \circ f)^{-1}(c) = a$$
+
+and
+
+$$(g \circ f)(a) = c.$$
+
+Consider the second equation
+
+\begin{align*}
+(g \circ f)(a) &= c \\ 
+g(f(a)) &= c \\
+f^{-1}(g^{-1}(g(f(a)))) &= f^{-1}(g^{-1}(c)) \\
+a &= f^{-1}(g^{-1}(c)) \\
+a &= (f^{-1} \circ g^{-1}) (c).
+\end{align*}
+
+Combining this result and the fact that $(g \circ f)^{-1}(c) = a$ yields
+
+$$(g \circ f)^{-1}(c) = a = (f^{-1} \circ g^{-1})(c).$$
+
+This is what we are trying to prove.
 
 
 
