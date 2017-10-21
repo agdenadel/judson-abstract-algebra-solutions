@@ -322,6 +322,14 @@ hence $(ab)^q = e$ which is a contradiction.
 
 
 
+\section*{24}
+
+Let $p$ and $q$ be distinct primes. How many generators does $\mathbb{Z}_{pq}$ have?
+
+\vspace{\baselineskip}
+
+Recall Corollary 4.7: The generators of $\mathbb{Z}_n$ are the integers $r$ such that $1 \leq r < n$ and $\gcd(r,n) = 1$. From this and the fact that $p$ and $q$ are the prime factors of $pq$ we know that each $r$ that is not a multiple of $p$ and not a multiple of $q$ is a generator. There are $q$ multiples of $p$ between 0 and $pq$ and there are $p$ multiples of $q$ between 0 and $pq$. This double counts 0 so we must subtract it. Therefore, there are $pq - p - q + 1$ generators in $\mathbb{Z}_n$.
+
 
 \section*{31}
 
@@ -330,7 +338,7 @@ Let $G$ be an abelian group. Show that the elements of finite order in $G$ form 
 
 \vspace{\baselineskip}
 
-Denote the torsion subgroup of $G$ by $T$. Note that $e$ has order 1 and hence $e \in T$. Let $t \in T$. Let $n$ be the order of $t$ such that $t^n = e$. Notice that since $tt^{n-1} = e$ it is true that $t^{-1} = t^{n-1}$ and thus $t^{-1} \in T$. Let $y \in T$ with the order of $y$ being $m$. Notice that $ty^{mn} = t^{mn}y^{mn} = e$. This shows $ty \in T$. This proves that $T$ is a subgroup of $G$. 
+Denote the torsion subgroup of $G$ by $T$. Note that $e$ has order 1 and hence $e \in T$. Let $t \in T$. Let $n$ be the order of $t$ such that $t^n = e$. Notice that since $tt^{n-1} = e$ it is true that $t^{-1} = t^{n-1}$ and thus $t^{-1} \in T$. Let $y \in T$ with the order of $y$ being $m$. Notice that $(ty)^{mn} = t^{mn}y^{mn} = e$. This shows $ty \in T$. This proves that $T$ is a subgroup of $G$. 
 
 
 \section*{38}
