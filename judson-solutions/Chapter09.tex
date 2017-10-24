@@ -43,4 +43,44 @@ $$x = y$$
 
 so $f$ is injective. Note that $f$ is surjective by definition. Since $f$ is a bijection and preserves the group operation $f$ is an isomorphism.
 
+
+\section*{2} 
+
+Prove that $\mathbb{C}^*$ is isomorphic to the subgroup of $GL_2(\mathbb{R}$ consisting of matrices of form
+
+$$
+  \begin{pmatrix}
+    a & b \\
+    -b & a
+  \end{pmatrix}.$$
+  
+We will call the subgroup described above $M$. Consider a function $f : \mathbb{C}^* \rightarrow M$ defined by 
+
+$$f(a+bi) = \begin{pmatrix}
+    a & b \\
+    -b & a
+  \end{pmatrix}.$$
+  
+Let $a,b,c,d \in \mathbb{R}$ where $ab \neq 0$ and $cd \neq 0$. First note that the function preserves the group operation since
+
+\begin{align*}
+f((a+bi)(c+di)) &= f(ac-db + (db + da)i) \\
+&= \begin{pmatrix}
+    ac-db & cb + da \\
+    cb + da & ac - db
+  \end{pmatrix} \\
+&= = \begin{pmatrix}
+    a & b \\
+    -b & a
+  \end{pmatrix}
+  = \begin{pmatrix}
+    c & d \\
+    -d & c
+  \end{pmatrix} \\
+&= f(a+bi)f(c+di)
+\end{align*}
+
+Note that $f$ is surjective because $a,b$ are arbitrary real numbers. Notice that $f$ is injective because of element-wise equality of matrices.
+
+
 \end{document}
