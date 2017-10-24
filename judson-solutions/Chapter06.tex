@@ -59,6 +59,33 @@ Recall Euler's Theorem: Let $a$ and $n$ be integers such that $n > 0$ and $\gcd(
 $$4^8 = 65536 \equiv 1 \mod 15.$$
 
 
+\section*{11}
+
+Let $H$ be a subgroup of a group $G$ and suppose that $g_1, g_2 \in G$. Prove that the following conditions are equivalent.
+
+$$g_1 H = g_2 H$$
+$$H g_1^{-1} = H g_2^{-1}$$
+$$g_1 H \subseteq g_2 H$$
+$$g_2  \in g_1 H$$
+$$g_1^{-1} g_2 \in H$$
+
+\vspace{\baselineskip}
+
+Assume $g_1 H = g_2 H$. Let $x \in H g_1^{-1}$. By assumption there exist $h_1 \in H$ such that $x = h_1 g_1^{-1}$. Consider that since
+
+$$x^{-1} = g_1 h^{-1}$$
+
+it is true that $x^{-1} \in g_1 H$. Therefore there exists $h_2^{-1} \in H$ such that $x^{-1} = g_2 h_2^{-1}$. It follows that $x = h_2 g_2^{-2}$. Hence $x \in H g_2^{-1}$. This shows $H g_1^{-1} \subseteq H g_2^{-1}$. The proof that $H g_2^{-1} \subseteq H g_1^{-1}$. Is identical.
+
+Assume $Hg_1^{-1} = Hg_2^{-1}$. The proof is very similar to the last proof. Let $x \in g_1 H$. Then there exists $h_1 \in H$ such that $x = g_1 h_1$. Note that since $x^{-1} = h_1^{-1} g_{-1}^{-1}$ it is true that $x^{-1} \in H g_1^{-1}$. Therefore there exists $h_2^{-1} \in H$ such that $x^{-1} = h_2^{-1} g_2^{-1}$. Note that $x = g_2 h_2 \in g_2 H$. Therefore $g_1 H \subseteq g_2 H$.
+
+Assume $g_1 H \subseteq g_2 H$. Note that for all $h_1 \in H$ there exists $h_2 \in H$. Such that $g_1 h_1 = g_2 h_2$. Note that $g_2 = g_1 h_1 h_2 ^{-1}$. Since $h_1 h_2^{-1} \in H$ it is true that $g_2 \in g_1 H$.
+
+Assume $g_2  \in g_1 H$. There exists $h \in H$ such that $g_2 = g_1 h$. Notice $h = g_1^{-1} g_2 \in H$.
+
+Assume $g_1^{-1} g_2 \in H$. Note that there exists $h_1 \in H$ such that $g_1^{-1} g_2 = h_1$ and hence $g_1 = g_2 h_1^{-1}$. Let $x \in g_1 H$. Then there exists $h_2 \in H$ such that $g_1 h_2 = x$. Then $x = g_2 h_1^{-1} h_2 \in g_2 H$. This proves $g_1 H \subseteq g_2 H$. The reverse proof is identical.
+
+
 \section*{13}
 
 What fails in the proof of Theorem 6.3 if $\phi : \mathcal{L}_H \rightarrow \mathcal{R}_H$ is defined by $\phi(gH) = Hg$.
