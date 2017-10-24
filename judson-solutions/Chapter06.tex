@@ -59,6 +59,19 @@ Recall Euler's Theorem: Let $a$ and $n$ be integers such that $n > 0$ and $\gcd(
 $$4^8 = 65536 \equiv 1 \mod 15.$$
 
 
+\section*{14}
+
+Suppose that $g^n = e$. Show that the order of $g$ divides $n$.
+
+\vspace{\baselineskip}
+
+Clearly $|g| \leq n$. If $|g| = n$, then clearly $|g|$ divides $n$. In the case where $|g| < n$ we will proceed by contradiction. Assume $|g|$ does not divide $n$. Applying the division algorithm yields $n = q|g| + r$ where $0 < r < |g|$. Consider
+
+$$e = g^n = g^{q|g| + r} = g^{q|g|}g^r = eg^r = g^r$$
+
+this is a a contradiction of $0 < r < |g|$, hence $|g|$ divides $n$.
+
+
 
 
 \end{document}
