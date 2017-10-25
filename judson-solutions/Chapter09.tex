@@ -125,5 +125,28 @@ h &= f(g) \\
 Notice that $f(a)$ is a generator of $H$ since $h$ is arbitrary. This proves that $H$ is a cyclic group.
 
 
+\section*{34}
+
+An \textit{automorphism} of a group $G$ is an isomorphism with itself. Prove that complex conjugation is an automorphism of the additive group of complex numbers; that is, show that the map $\phi(a+bi) = a - bi$ is an isomorphism from $\mathbb{C}$ to $\mathbb{C}$.
+
+\vspace{\baselineskip}
+
+Note that since
+
+\begin{align*}
+\phi((a+bi) + (c+di)) &= \phi((a+c) + (b+d)i) \\
+&= (a+c) - (b+d)i \\
+&= (a-bi) + (c-di) \\
+&= \phi(a+bi) + \phi(c+di)
+\end{align*}
+
+we know that $\phi$ preserves the group operation. The proof that $\phi$ is surjective is trivial (to get any element apply $\phi$ to the element's inverse). To show that $\phi$ is injective consider
+
+$$\phi(a+bi) = \phi(c+di)$$
+$$\overline{\phi(a+bi)} = \overline{\phi(c+di)}$$
+$$a + bi = c + di.$$
+
+
+
 
 \end{document}
