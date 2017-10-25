@@ -147,6 +147,33 @@ $$\overline{\phi(a+bi)} = \overline{\phi(c+di)}$$
 $$a + bi = c + di.$$
 
 
+\section*{35}
+
+Prove that $a + ib \rightarrow a- ib$ is an automorphism of $\mathbb{C}^*$.
+
+\vspace{\baselineskip}
+
+Call the map $f$. Note that by problem 34 we know that $f$ is a bijection. To show that $f$ preserves the group operation consider
+
+\begin{align*}
+f((a+bi) (c+di)) &= f((ac - bd) + (ad + bc)i) \\
+&= (ac - bd) - (ad + bc)i \\
+&= (a-bi)(c-di) \\
+&= f(a+bi) f(c+di).
+\end{align*}
+
+
+\section*{37}
+
+We will denote the set of all automorphisms of $G$ by Aut$(G)$. Prove that Aut$(G)$ is a subgroup of $S_G$, the group of permutations of $G$.
+
+\vspace{\baselineskip}
+
+Note that the identity automorphism is the function $x \rightarrow x$. Clearly any automorphism composed with another automorphism results in an automorphism. Since automorphisms are bijections clearly inverses are contained within Aut$(G)$. This proves Aut$(G)$ is a subgroup of $S_G$.
+
+
+
+
 
 
 \end{document}
