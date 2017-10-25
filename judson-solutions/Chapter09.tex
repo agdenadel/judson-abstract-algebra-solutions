@@ -108,4 +108,22 @@ $$g = a^k = \phi(k)$$
 therefore $\phi$ is surjective. This proves that $\phi$ is an isomorphism, hence any cyclic group of order $n$ is isomorphic to $\mathbb{Z}_n$.
 
 
+\section*{27}
+
+Let $G \equiv H$. Show that if $G$ is cyclic, then so is $H$.
+
+\vspace{\baselineskip}
+
+Let $a$ be a generator of $G$. Then for all $g \in G$ there exists $k \in \mathbb{Z}$ such that $a^k = g$. Let $f: G \rightarrow H$ be an isomorphism. Let $h \in H$. There exists $g \in G$ such that
+
+\begin{align*}
+h &= f(g) \\
+&= f(a^k) \\
+&= f(a)^k.
+\end{align*}
+
+Notice that $f(a)$ is a generator of $H$ since $h$ is arbitrary. This proves that $H$ is a cyclic group.
+
+
+
 \end{document}
