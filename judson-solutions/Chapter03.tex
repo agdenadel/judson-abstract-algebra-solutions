@@ -305,6 +305,51 @@ The dihedral group of six elements is the smallest non-abelian group. Here is th
 \end{tabular}
 
 
+\section*{16}
+
+Give a specific example of some group $G$ and elements $g, h \in G$ where $(gh)^n \neq g^n h^n$. 
+
+\vspace{\baselineskip}
+
+We need to find a group that is not abelian. Consider $GL_2(\mathbb{R})$. Let 
+
+$$A = 
+  \begin{pmatrix}
+    1 & 2 \\
+    3 & 2
+  \end{pmatrix},
+  B = 
+  \begin{pmatrix}
+    2 & 1 \\
+    2 & 3
+  \end{pmatrix}.
+$$
+
+Notice that 
+
+$$A^{-1} = 
+  \begin{pmatrix}
+    -1/2 & 1/2 \\
+    3/4 & -1/4
+  \end{pmatrix},
+  B^{-1} = 
+  \begin{pmatrix}
+    3/4 & -1/4 \\
+    -1/2 & 1/2 
+  \end{pmatrix}
+$$
+
+so $A, B \in GL_2(\mathbb{R})$. Then notice that 
+
+$$A^n B^n = \begin{pmatrix}
+    102 & 101 \\
+    154 & 155
+  \end{pmatrix} \neq 
+    \begin{pmatrix}
+    106 & 105 \\
+    150 & 151 
+  \end{pmatrix} = (AB)^n.$$
+
 \section*{24}
 
 Let $a$ and $B$ be elements in a group $G$. Prove that $ab^na^{-1} = (aba^{-1})^n$ for $n \in \mathbb{Z}$.
