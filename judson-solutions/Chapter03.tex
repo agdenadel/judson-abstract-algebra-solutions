@@ -239,6 +239,34 @@ Notice that
 Let $C,D \in GL_2(\mathbb{R})$. Then $\det(C) \neq 0$ and $\det(D) \neq 0$. By the property proved above $\det{CD} = \det{C}\det{D}$. Since $\det{C} \neq 0$ and $\det{D} \neq 0$ we know that $\det{CD} \neq{0}$ hence $CD \in GL_2(\mathbb{R})$ and $GL_2(\mathbb{R})$ is closed.
 
 
+\section*{12}
+
+Let $\mathbb{Z}_2^n = \{ (a_1, a_2, ..., a_n) : a_i \in \mathbb{Z}_2 \}$ Define a binary operation on $\mathbb{Z}_2^n$ by 
+
+$$(a_1, a_2, ..., a_n) + (b_1, b_2, ..., b_n) = (a_1+b_1, a_2+b_2, ..., a_n+b_n).$$
+
+Prove that $\mathbb{Z}_2^n$ is a group under this operation. This group is important in algebraic coding theory.
+
+\vspace{\baselineskip}
+
+Let $(a_1, a_2, ..., a_n), (b_1, b_2, ..., b_n), (c_1, c_2, ..., c_n) \in \mathbb{Z}_2^n$. Notice that the identity is in $\mathbb{Z}_2^n$ since
+
+$$(a_1, a_2, ..., a_n) + (0, 0, ..., 0) =  (a_1, a_2, ..., a_n).$$
+
+Also note that each element has an inverse
+
+$$(a_1, a_2, ..., a_n) + (-a_1, -a_2, ..., -a_n) = (0, 0, ..., 0).$$
+
+Associativity follows from the associativity of modular arithmetic
+
+
+\begin{align*}
+((a_1, a_2, ..., a_n) + (b_1, b_2, ..., b_n)) + (c_1, c_2, ..., c_n) &= (a_1+b_1, a_2+b_2, ..., a_n+b_n) + (c_1, c_2, ..., c_n) \\
+&= ((a_1+b_1) + c_1, (a_2+b_2) + c_2, ..., (a_n+b_n) + c_n) \\ 
+&= (a_1 + (b_1+c_1), a_2 + (b_2+c_2), ..., (a_n + (b_n+c_n)) \\
+&= (a_1, a_2, ..., a_n) + ((b_1, b_2, ..., b_n) + (c_1, c_2, ..., c_n)).
+\end{align*}
+
 
 \section*{13}
 
