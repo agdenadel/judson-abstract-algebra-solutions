@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 
-\section{}
+\section*{1}
 
 Suppose $3x \equiv 2 \mod 7$. Then $x \in \{z: z = 3 + 7n, n \in \mathbb{Z}\}$.
 
@@ -45,17 +45,29 @@ Suppose $5x \equiv 1 \mod 6$. Then $x \in \{z: z = 5 + 6n, n \in \mathbb{Z}\}$.
 
 Suppose $3x \equiv 1 \mod 6$. There are no solutions.
 
-\section{}
 
-\section{}
+\section*{6}
 
-\section{}
+Give a multiplication table for the group $U(12)$.
 
-\section{}
+\vspace{\baselineskip}
 
-\section{}
+Note that $U(12) = \{ 1, 5, 7, 11 \}.$
 
-\section{}
+$$
+\begin{tabular}{ l | l l l l l }
+  * & 1 & 5 & 7 & 11 \\
+  \hline      
+  1 & 1 & 5 & 7 & 11 \\
+  5 & 5 & 1 & 11 & 7 \\
+  7 & 7 & 11 & 1 & 5 \\
+  11 & 11 & 7 & 5 & 1 \\
+\end{tabular}
+$$
+
+
+
+\section*{7}
 
 Let $S = \mathbb{R} \setminus \{ -1 \}$ and define a binary operation on $S$ by $a * b = a + b + ab$. Prove that $(S, *)$ is an abelian group.
 
@@ -89,7 +101,7 @@ Consider
 
 This shows associativity.
 
-\section{}
+\section*{8}
 
 Give an example of two elements $A$ and $B$ in $GL_2(\mathbb{R})$ with $AB \neq BA$.
 
@@ -127,7 +139,7 @@ $$BA =
   \end{pmatrix}
 $$
 
-\section{}
+\section*{9}
 
 Prove that the product of two matrices in $SL_2(\mathbb{R})$ has determinant one.
 
@@ -137,7 +149,7 @@ Let $A,B \in SL_2(\mathbb{R})$. This follows from the basic property of determin
 
 $$\det (AB) = \det(A) \det(B) = 1 \cdot 1 = 1.$$
 
-\section{}
+\section*{10}
 
 Prove that the set of matrices of the form
 $$
@@ -172,7 +184,7 @@ $$
 The proof that this set of matrices forms a group is straightforward. Associativity follows from the associativity of matrix multiplication. The identity element is the usual identity matrix. Each matrix in the set is upper triangular and has an inverse (if this is not obvious, then the matrices can be easily put in reduced row echelon form).
 
 
-\section{}
+\section*{11}
 
 Prove that $\det(AB) = det(A)det(B)$ in $GL_2(\mathbb{R})$ Use this result to show that the binary operation in the group $GL_2(\mathbb{R})$ is closed; that is, if $A$ and $B$ are in $GL_2(\mathbb{R})$, then $AB \in GL_2(\mathbb{R})$.
 
@@ -227,11 +239,8 @@ Notice that
 Let $C,D \in GL_2(\mathbb{R})$. Then $\det(C) \neq 0$ and $\det(D) \neq 0$. By the property proved above $\det{CD} = \det{C}\det{D}$. Since $\det{C} \neq 0$ and $\det{D} \neq 0$ we know that $\det{CD} \neq{0}$ hence $CD \in GL_2(\mathbb{R})$ and $GL_2(\mathbb{R})$ is closed.
 
 
-\section{}
 
-
-
-\section{}
+\section*{13}
 
 Show that $\mathbb{R}^{*} = \mathbb{R} \setminus \{ 0 \}$ is a group under the operation of multiplication.
 
@@ -244,7 +253,7 @@ $$xx^{-1} = x \frac{1}{x} = 1.$$
 Hence, $\mathbb{R}^*$ is a group
 
 
-\section{}
+\section*{14}
 
 Given the groups $\mathbb{R}^*$ and $\mathbb{Z}$ let $G = \mathbb{R} \times \mathbb{Z}$. Define a binary operation $\circ$ on $G$ by $(a,m) \circ (b,n) = (ab, m+n)$. Show that $G$ is a group under this operation.
 
@@ -252,7 +261,7 @@ Given the groups $\mathbb{R}^*$ and $\mathbb{Z}$ let $G = \mathbb{R} \times \mat
 
 This proof is straightforward since the two contributing groups are operated on independently. Associativity follows from the associativity of $\mathbb{R}^*$ and $\mathbb{Z}$. The identity is $(1,0)$. The inverse of $(x, n) \in \mathbb{R}^* \times \mathbb{Z}$ is $(1/x, -n)$.
 
-\section{}
+\section*{15}
 
 The dihedral group of six elements is the smallest non-abelian group. Here is the Cayley table
 
@@ -267,32 +276,8 @@ The dihedral group of six elements is the smallest non-abelian group. Here is th
   f & f & b & c & a & e & d
 \end{tabular}
 
-\section{}
 
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-
-\section{}
-
-
-\section{}
+\section*{24}
 
 Let $a$ and $B$ be elements in a group $G$. Prove that $ab^na^{-1} = (aba^{-1})^n$ for $n \in \mathbb{Z}$.
 
@@ -306,7 +291,7 @@ $$ab^na^{-1} = a b ... b  a^{-1} = a  b a^{-1} a ... a^{-1} a b a^{-1} = (aba^{-
 \section{}
 
 
-\section{}
+\section*{26}
 
 Prove that the inverse of $g1 g2 ... g_n$ is $g_n^{-1} g_{n-1}^{-1} ... g_1^{-1}$.
 
@@ -323,7 +308,7 @@ Consider
 \end{align*}
 
 
-\section{}
+\section*{27}
 
 Prove the remainder of Proposition 3.6: if $G$ is a group and $a,b \in G$, then the equation $xa = b$ has unique solutions in $G$.
 
@@ -348,10 +333,9 @@ x_2 &= b a^{-1}
 Then, since the group operation is well-defined $x_1 = x_2$, a contradiction. This proves that solutions to $xa = b$ in $G$ are unique.
 
 
-\section{}
 
 
-\section{}
+\section*{29}
 
 Prove the right and left cancellation laws for a group $G$; that is , show that in the group $G$, $ba = ca$ implies $b = c$ and $ab = ac$ implies $b = c$ for elements $a,b,c \in G$.
 
@@ -376,7 +360,7 @@ b &= c
 \end{align*}
 
 
-\section{}
+\section*{30}
 
 Show that if $a^2 = e$ for all elements $a$ in a group $G$, then $G$ must be abelian
 
@@ -389,10 +373,7 @@ $$abab = aabb$$
 $$ ba = ab.$$
 
 
-\section{}
-
-
-\section{}
+\section*{32}
 
 Let $G$ be a group and suppose that $(ab)^2 = a^2b^2$ for all $a$ and $b$ in $G$. Prove that $G$ is an abelian group.
 
@@ -415,31 +396,7 @@ $$ba = ab.$$
 Hence, $G$ is an abelian group.
 
 
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
-
-
-\section{}
+\section*{41}
 
 Let $G$ be the group of $2 \times 2$ matrices under addition and 
 
@@ -484,13 +441,7 @@ $$
 Note that since $-a + -d = 0$ that $-A \in H$. This proves that $H$ is a subgroup of $G$.
 
 
-\section{}
-
-
-\section{}
-
-
-\section{}
+\section*{44}
 
 Prove that the intersection of two subgroups of a group $G$ is also a subgroup of $G$
 
@@ -500,7 +451,7 @@ Let $H$ and $K$ be subgroups of $G$. Note that since $H$ and $K$ are subgroups, 
 
 
 
-\section{}
+\section*{45}
 
 Prove or disprove: if $H$ and $K$ are subgroups of a group $G$, then $H \cup K$ is a subgroup of $G$.
 
@@ -509,13 +460,7 @@ Prove or disprove: if $H$ and $K$ are subgroups of a group $G$, then $H \cup K$ 
 Consider the following counterexample. Note that $2\mathbb{Z}$ and $3\mathbb{Z}$ are both subgroups of $\mathbb{Z}$ under addition. It is clear that $2\mathbb{Z} \cup 3\mathbb{Z}$ is not a subgroup of $\mathbb{Z}$ because it is not closed under addition. For example $2,3 \in 2\mathbb{Z} \cup 3\mathbb{Z}$ but their sum $5 \not\in 2\mathbb{Z} \cup 3\mathbb{Z}$
 
 
-\section{}
-
-
-\section{}
-
-
-\section{}
+\section*{48}
 
 Let $a$ and $b$ be elements of a group $G$. If $a^4b = ba$ and $a^3 = e$, prove that $ab = ba$.
 
@@ -530,7 +475,7 @@ ba &= a^4b \\
 \end{align*}
 
 
-\section{}
+\section*{49}
 
 Note that this is a duplicate of problem 48.
 
@@ -546,10 +491,7 @@ ba &= a^4b \\
 \end{align*}
 
 
-\section{}
-
-
-\section{}
+\section*{51}
 
 If $xy = x^{-1} y^{-1}$ for all $x$ and $y$ in $G$, prove that $G$ must be abelian.
 
@@ -564,13 +506,7 @@ Consider
 $$xy = (xy)^{-1} = y^{-1} x^{-1} = yx.$$
 
 
-\section{}
-
-
-\section{}
-
-
-\section{}
+\section*{54}
 
 Let $H$ be a subgroup of $G$. If $g \in G$, show that $gHg^{-1} = \{ghg^{-1}: h \in H \}$ is also a subgroup of $G$.
 
