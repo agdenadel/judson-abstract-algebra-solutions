@@ -367,6 +367,20 @@ Let $U(n)$ be the group of units in $\mathbb{Z}_n$. If $n > 2$, prove that there
 
 \vspace{\baselineskip}
 
+Let $n > 2$. There are two parts to the proof. First we will show that $U(n)$ has an even number of elements. Then we will show that if a group has an even number of elements there is $g$ in the group such that $g^2 = e$. 
+
+\vspace{\baselineskip}
+
+Recall that for each $x \in \mathbb{Z}_n x \neq 0$ that $x \in U(n)$ if $\gcd(k,n) = 1$. This means that the number of elements in $U(n)$ is given by $\phi(n)$ where $\phi$ is Euler's totient function. Note that for $n > 2$ that $\phi$ is even (see comment below for sketch of proof).
+
+\vspace{\baselineskip}
+
+We use a similar argument to prove the second statement. Assume that a group $g$ has an even number of elements. We can pair each element $g \in G$ with its inverse. Note that $e = e^{-1}$ isn't paired with any other element. Since $G$ has an even number of elements there must be one other element, $a$, such that $a^2 = e$.
+
+\vspace{\baselineskip}
+
+Note that $\phi(mn) = \phi(m) \phi(n)$ and that if $p$ is prime then $\phi(p) = p-1$. Combining these facts and the Fundamental Theorem of Arithmetic yields the desired statement.
+
 
 
 
