@@ -361,7 +361,13 @@ Consider
 $$ab^na^{-1} = a b ... b  a^{-1} = a  b a^{-1} a ... a^{-1} a b a^{-1} = (aba^{-1})^n.$$
 
 
-\section{}
+\section*{25}
+
+Let $U(n)$ be the group of units in $\mathbb{Z}_n$. If $n > 2$, prove that there is an element $k \in U(n)$ such that $k^2 = 1$ and $k \neq 1$.
+
+\vspace{\baselineskip}
+
+
 
 
 \section*{26}
@@ -406,7 +412,41 @@ x_2 &= b a^{-1}
 Then, since the group operation is well-defined $x_1 = x_2$, a contradiction. This proves that solutions to $xa = b$ in $G$ are unique.
 
 
+\section*{28}
 
+Prove Theorem 3.8. In a group, the usual laws of exponents hold; that is, for all $g, h \in G$,
+
+$$g^m g^n = g^{m+n} \text{ for all } m,n \in \mathbb{Z};$$
+$$(g^m)^n = g^{mn} \text{ for all } m,n \in \mathbb{Z};$$
+$$(gh)^n = (h^{-1} g^{-1})^{-n} \text{ for all } n \in \mathbb{Z}$$
+
+Furthermore, if $G$ is abelian, then $(gh)^n = g^n h^n$.
+
+\vspace{\baselineskip}
+
+To prove the first statement, notice that (we will index for clarity where $g_i = g$)
+
+$$g^m g^n = g_1 g_2 ... g_m g_1 ... g_n =  g^{m+n}.$$
+
+To prove the second statement consider 
+
+$$(g^m)^n = g^m ... g^m.$$
+
+From the first statement it follows that 
+
+$$(g^m ... g^m = g^{m+...+m} = g^{mn}.$$
+
+To prove the second statement first note that
+
+$$gh = (h^{-1} g^{-1})^{-1}.$$
+
+It follows from the second statement that 
+
+$$(gh)^n = ((h^{-1} g^{-1})^{-1})^n = (h^{-1} g^{-1})^{-n}.$$
+
+Assume $G$ is abelian. Consider 
+
+$$(gh)^n = gh .. gh = g...g h...h = g^n h^n.$$
 
 \section*{29}
 
