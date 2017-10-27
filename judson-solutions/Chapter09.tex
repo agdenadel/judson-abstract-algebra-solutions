@@ -108,6 +108,64 @@ $$g = a^k = \phi(k)$$
 therefore $\phi$ is surjective. This proves that $\phi$ is an isomorphism, hence any cyclic group of order $n$ is isomorphic to $\mathbb{Z}_n$.
 
 
+\section*{9}
+
+Let $G = \mathbb{R} \setminus \{ -1 \}$ and define a binary operation on $G$ by 
+
+$$a * b = a + b + ab.$$
+
+Prove that $G$ is a group under this operation. Show that $(G, *)$ is isomorphic to the multiplicative group of nonzero real numbers.
+
+\vspace{\baselineskip}
+
+Let $a,b,c \in G$. Note that $G$ contains an identity since
+
+$$a * 0 = a + 0 + 0a = a.$$
+
+Note $G$ contains inverses since
+
+\begin{align*}
+a * \frac{-a}{1+a} &= a + \frac{-a}{1+a} + \frac{-a^2}{1+a} \\
+&= \frac{a + a^2}{1+a} + \frac{-a}{1+a} + \frac{-a^2}{1+a} \\ 
+&= 0.
+\end{align*}
+
+Consider
+
+\begin{align*}
+(a*b) * c &= (a + b + ab) * c \\
+&= a + b + ab + c + c (a + b + ab) \\
+&= a + b + c + ab + ac + bc + abc \\
+&= b + c + bc + a + a (b + c + bc) \\
+&= a * (b + c + bc) \\
+&= a * (b*c)
+\end{align*}
+
+shows that $*$ is associative. We must now find a bijection $f : G \rightarrow \mathbb{R} \setminus \{ 0 \}$. Let $f(x) = 1 + x$. Consider
+
+\begin{align*}
+f(a*b) &= f(a + b + ab) \\ 
+&= (1 + a + b + ab) \\
+&= (1 + a) (1 + b) \\
+&= f(a) f(b).
+\end{align*}
+
+Hence $f$ preserves the group operation. It is clear that $f$ is injective since
+
+\begin{align*}
+f(a) &= f(b) \\
+1 + a &= 1 + b \\
+a &= b.
+\end{align*}
+
+It is clear that $f$ is surjective since for $x \in \mathbb{R} \setminus \{ 0 \}$
+
+$$f(x - 1) = x$$
+
+and $(x - 1) \in G$.
+
+
+
 \section*{27}
 
 Let $G \equiv H$. Show that if $G$ is cyclic, then so is $H$.
