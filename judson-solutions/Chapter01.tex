@@ -270,4 +270,18 @@ $$x_1^2 + y_1 ^2 = x_2^2 + y_2^2 = x_3^2 + y_3^2.$$
 
 This shows the relation is transitive because of the transitivity of equality.
 
+
+\section*{26}
+
+Define a relation $\sim$ on $\mathbb{R}^2$ by stating that $(a,b) \sim (c,d)$ if and only if $a^2 + b^2 \leq c^2 + d^2$. Show that $\sim$ is reflexive and transitive, but not symmetric.
+
+\vspace{\baselineskip}
+
+Let $(a,b), (c,d), (x,y) \in \mathbb{R}^2$. Note that $\sim$ is trivially reflexive since $a^2 + b^2 \leq a^2 + b^2$. Assume that $(a,b) \sim (c,d)$ and $(c,d) \sim (x,y)$. It follows that 
+
+$$a^2 + b^2 \leq c^2 + d^2 \leq x^2 + y^2$$
+$$a^2 + b^2 \leq x^2 + y^2.$$
+
+This shows $\sim$ is transitive. The following counterexample shows $\sim$ is not reflexive. Note $(0,0) \sim (1,1)$ since $0^2 + 0^2 = 0 \leq 2 = 1^2 + 1^2$, but $(1,1) \not \sim (0,0)$ since $2 \not \leq 0$.
+
 \end{document}
