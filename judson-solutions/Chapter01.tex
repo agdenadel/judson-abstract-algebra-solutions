@@ -136,7 +136,19 @@ Assume $A \cap B = A$. Then  for all $a \in A$ it is true that $a \in A \cap B$ 
 
 Assume $A \subset B$. Then for all $a \in A$ it is true that $a \in B$. Since $a \in A$ and $a \in B$ we know $A \subset A \cap B$. Clearly $A \cap B \subset A$, therefore $A \cap B = A$.
 
+
 \section*{9}
+
+Prove $(A \cap B)' = A' \cup B'$.
+
+\vspace{\baselineskip}
+
+Let $x \in (A \cap B)'$. Then $x \not \in (A \cap B)$. By the definition of intersection either $x \not \in A$ or $x \not \in B$ so $x \in A'$ or $x \in B'$. By definition of union $x \in A' \cup B'$. This shows $(A \cap B)' \subseteq A' \cup B'$.
+
+\vspace{\baselineskip}
+
+Let $x \in A' \cup B'$. Then $x \in A'$ or $x \in B'$ by the definition of union. By the definition of the complement $x \not \in A$ or $x \not \in B$ which implies that $x \not \in A \cap B$. Then, by the definition of the complement, $x \in (A \cap B)'$. This shows $A' \cup B' \subseteq (A \cap B)'$.  Hence $(A \cap B)' = A' \cup B'$.
+
 
 
 \section*{10}
@@ -221,5 +233,28 @@ $$(g \circ f)^{-1}(c) = a = (f^{-1} \circ g^{-1})(c).$$
 This is what we are trying to prove.
 
 
+\section*{20}
+
+Define a function $f: \mathbb{N} \rightarrow \mathbb{N}$ that is one-to-one but not onto.
+
+\vspace{\baselineskip}
+
+Let $m,n \in \mathbb{N}$. Consider the function $f(x) = 2x$. We know $f$ is one-to-one since
+
+\begin{align*}
+f(m) &= f(n) \\
+2m &= 2n \\
+m &= n
+\end{align*}
+
+but notice that $f$ is not onto since there is no solution to f(x) = 3 (or any other odd number).
+
+\vspace{\baselineskip}
+
+Define a function $f: \mathbb{N} \rightarrow \mathbb{N}$ that is onto but not one-to-one.
+
+\vspace{\baselineskip}
+
+Let $m,n \in \mathbb{N}$. Consider the function $f(x) = x - 1$ if $n > 1$ and $f(1) = 1$. Notice that $f$ is onto since $f(n+1) = n$ where $n$ is arbitrary. A counterexample to $f$ being one-to-one is $f(1) = f(2) = 1$.
 
 \end{document}
