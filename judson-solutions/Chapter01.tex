@@ -257,4 +257,17 @@ Define a function $f: \mathbb{N} \rightarrow \mathbb{N}$ that is onto but not on
 
 Let $m,n \in \mathbb{N}$. Consider the function $f(x) = x - 1$ if $n > 1$ and $f(1) = 1$. Notice that $f$ is onto since $f(n+1) = n$ where $n$ is arbitrary. A counterexample to $f$ being one-to-one is $f(1) = f(2) = 1$.
 
+
+\section*{21}
+
+Prove the relation defined on $\mathbb{R}^2$ by $(x_1, y_2) \sim (x_2, y_2)$ if $x_1^2 + y_1^2 = x_2^2 + y_2^2$ is an equivalence relation.
+
+\vspace{\baselineskip}
+
+Let $(x_1, y_1), (x_2, y_2), (x_3, y_3) \in \mathbb{R}^2$. First, the relation is trivially reflexive since equality is reflexive. Also, the relation is trivially symmetric since equality is symmetric. To show the relation is transitive assume $(x_1, y_1) \sim (x_2, y_2)$ and $(x_2, y_2) \sim (x_3, y_3)$ and consider
+
+$$x_1^2 + y_1 ^2 = x_2^2 + y_2^2 = x_3^2 + y_3^2.$$
+
+This shows the relation is transitive because of the transitivity of equality.
+
 \end{document}
