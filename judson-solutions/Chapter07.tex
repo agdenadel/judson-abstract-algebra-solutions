@@ -40,10 +40,41 @@ Decode ZLOOA WKLVA EHARQ WKHA ILQDO, which was encoded using the cryptosystem in
 WILLXTHISXBEXONTHEXFINAL
 
 
+\section*{4}
+
+What is the total number of possible monoalphabetic cryptosystems? How secure are such systems?
+
+\vspace{\baselineskip}
+
+There are $26! - 1$ possible systems (we subtract one because of the identity permutation). They are relatively insecure because of frequency analysis and other methods.
 
 
+\section*{5}
 
+Prove that a  $2 \times 2$ matrix $A$ with entries in $\mathbb{Z}_{26}$ is invertible if and only if $\gcd(\det(A), 26) = 1$.
 
+\vspace{\baselineskip}
+
+Assume that $A$ is invertible. This implies that there exists $A^{-1}$ such that $AA^{-1} = I$ which in turn implies
+
+$$\det(A) \det(A^{-1}) = 1.$$
+
+This shows that $\det(A) \in U(26)$. It is true that all $x \in U(26)$ are coprime to 26 and hence 
+
+$$\gcd(\det(A), 26) = 1.$$
+
+Assume that $\gcd(\det(A), 26) = 1$. There exists integers $r$ and $s$ such that
+
+\begin{align*}
+\gcd(\det(A), 26) &= \gcd(ad - bc, 26) \\
+&= r(ad-bc) + 26s \\
+\end{align*}
+
+Hence $1 = r(ad-bc) + 26s$ rearranging yields
+
+$$r(ad - bc) = 1 - 26s.$$
+
+Since $s$ is an integer the right hand side is non-zero and hence $ad - bc \neq 0$ which implies that $A$ is invertible.
 
 
 
